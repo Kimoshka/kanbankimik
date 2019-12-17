@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kanban board</title>
+  <link rel="stylesheet" href="app.css"/>
+  
+</head>
+<body>
+  <div class="app-wrapper">
+  <header class="header">
+    <h1 class="logo">Kanban
+      <small>Kimik Arustamyan</small>
+    </h1>
+    <p class="total-card-counter" id="totalCards"></p>
+  </header>
+  <form id="frmAddTodo" class="form-add-todo">
+    Add Project: 
+    <input type="text" autocomplete="off" name="todo_text" id="" value="" placeholder="Write and press enter" />
+  </form>
+  <div class="board" id="board"></div>
+    <form id="frmAddList" class="form-add-list">
+      Add List:
+      <input type="text" autocomplete="off" name="list_name" id="" value="" placeholder="List name" />
+      <div class="github">
+        <a href="https://github.com/Kimoshka/kanbankimik">
+          <img src="http://pngimg.com/uploads/github/github_PNG44.png" width="42">
+        </a>
+    </div>
+    </form>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/lodash/4/lodash.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
